@@ -8,6 +8,7 @@ import time
 import sys
 
 
+# Used to clear the screen
 def clear():
     if name == 'nt':
         _ = system("cls")
@@ -15,10 +16,12 @@ def clear():
         _ = system("clear")
 
 
+# Get player choice
 def player_choice():
     return input("Rock, Paper or Scissors? (or type 'q' to quit)\n> ").lower()
 
 
+# Get computer choice
 def computer_choice():
     return random.choice(["rock", "paper", "scissors"])
 
@@ -26,6 +29,7 @@ def computer_choice():
 player_points = 0
 computer_points = 0
 
+# Main game loop
 while True:
 
     clear()
